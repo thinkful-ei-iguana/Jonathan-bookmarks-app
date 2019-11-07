@@ -1,0 +1,247 @@
+/***** Globals *****/
+/* Header font and margin */
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  color: #ffffff;
+  font-size: 68px;
+  text-align: center;
+  margin-bottom: 0.5em;
+
+}
+
+/* Body font and background image */
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-image: url("books.jpg");
+}
+
+ul {
+  padding: 0;
+}
+
+/* Center labels*/
+#filter-label {
+  color: white;
+  text-align: right;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 7px;
+  float: right;
+}
+
+/*New bookmark form */
+/* center form container */
+.form-container {
+  color: white;
+  display: block;
+  text-align: center;
+}
+
+form {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.new-item-li {
+  list-style-type: none;
+  text-align: center;
+}
+
+
+.error-message-container {
+  color: firebrick;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Controls */
+.controls {
+  text-align: left;
+}
+
+.controls button {
+  margin-bottom: 2em;
+}
+
+.add-button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.edit-btn {
+  margin-left: 10px;
+  float: right;
+}
+
+/* for drop down menu */
+select {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* bookmark headers */
+.header-button {
+  width: 100%;
+  height: 50px;
+}
+
+.header-button:hover {
+  border-color: lightgray;
+  background-color: lightgray;
+}
+
+/* bookmark button */
+.bookmark-header {  
+  margin: 0;
+  padding: 0;                            
+  border-left: 2px solid lightgray;
+  border-right: 2px solid lightgray;
+  border-top: 2px solid lightgray;
+  border-bottom: 2px solid lightgray; 
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.bookmark-item {
+  margin-top: 12px;
+  list-style-type: none;
+  background-color: rgb(255, 255, 255);
+}
+
+.bookmark-body {
+  border-left: 2px solid lightgray;
+  border-right: 2px solid lightgray;
+  border-bottom: 2px solid lightgray;
+  padding-bottom: 1em;
+  padding-top: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.bookmark-body p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.bookmark-button {
+  float: right;
+}
+
+
+.hidden {
+  display: none;
+}
+
+.add-btn-container {
+  text-align: center;
+}
+
+legend {
+  color: #ffffff;             
+}
+
+fieldset {
+   border: 2px solid lightgray; 
+}
+
+/* Inputs */
+input[type='text'],
+input[type='url'],
+textarea,
+select {
+  background-color: rgb(245, 240, 178);      
+  box-sizing: border-box;
+  height: 40px;
+  margin-bottom: 0.5em;
+  text-align: center;
+  width: 170px;                        
+}
+
+input[type='text'],
+input[type='url'],
+textarea {
+  width: 100%;
+}
+
+textarea {
+  min-height: 70px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+input[type='text']:focus,
+input[type='url']:focus,
+textarea:focus,
+select:focus {
+  border: 3px solid #eb5e3e;
+  outline: 0;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+}
+
+.filter-control {
+  float: right;
+}
+
+/* Buttons */
+button {
+  background-color: rgb(245, 240, 178);
+  border: 2px solid lightgray;
+  box-sizing: border-box;
+  color: rgb(0, 0, 0);
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  height: 40px;
+  padding: 0 30px;
+  text-align: center;
+  
+}
+
+button:hover {
+  color: rgb(46, 45, 45);
+  border-color: lightgray;
+  outline: 0;
+}
+
+/* media */
+@media (max-width: 460px) {
+  #filter-label {
+    float: none;
+    display: inline-block;
+    text-align: center;
+  }
+
+  select {
+    float: none;
+  }
+
+  .filter-control {
+    float: none;
+  }
+
+  .controls {
+    text-align: center;
+  }
+
+  .edit-btn {
+    float: none;
+  }
+
+  .bookmark-button {
+    float: none;
+  }
+}
